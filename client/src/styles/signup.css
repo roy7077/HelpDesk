@@ -1,0 +1,128 @@
+/* General Styling for the Background */
+.signUp-background {
+    background: linear-gradient(145deg, #6a11cb, #2575fc); /* Gradient Background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container for the Form */
+  .signUp-container {
+    background-color: #ffffff; /* White background */
+    padding: 40px 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Restrict max-width */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the container */
+  .signUp-container:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading Style */
+  .signUp-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  /* Input Fields Styling */
+  .signUp-form input,
+  .signUp-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus effect for input fields */
+  .signUp-form input:focus,
+  .signUp-form select:focus {
+    border-color: #4e73df; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(72, 144, 226, 0.5); /* Soft blue shadow */
+  }
+  
+  /* Submit Button Styling */
+  .signUp-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4e73df; /* Blue background */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  .signUp-button:hover {
+    background-color: #3c63b7;
+  }
+  
+  /* Error Message Styling */
+  .error {
+    color: #ff4d4d; /* Red color */
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Account Type Dropdown */
+  .signUp-form select {
+    background-color: #f7f7f7;
+  }
+  
+  /* Sign In Prompt Styling */
+  .login-prompt {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-prompt a {
+    color: #4e73df;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for the login link */
+  .login-prompt a:hover {
+    color: #3c63b7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .signUp-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .signUp-form h2 {
+      font-size: 1.6rem;
+    }
+  
+    .signUp-button {
+      font-size: 1rem;
+    }
+  
+    .signUp-form input,
+    .signUp-form select {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  

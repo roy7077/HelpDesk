@@ -1,0 +1,75 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #4e73df; /* Blue color for sidebar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 10px 0; /* Add spacing between list items */
+}
+
+/* Sidebar items styling */
+.sidebar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Sidebar link hover effect */
+.sidebar a:hover {
+  background-color: #3c63b7; /* Darker shade of blue */
+}
+
+/* Active link */
+.sidebar .active {
+  background-color: #2c5282; /* Highlight the active section */
+}
+
+/* Content area to adjust for the sidebar */
+.content-area {
+  margin-left: 250px;
+  padding: 20px;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content-area {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content-area {
+    margin-left: 0;
+  }
+}

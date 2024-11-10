@@ -1,0 +1,32 @@
+/* src/styles/globalHeader.css */
+
+.global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+  }
+  
+  .global-header .auth-options button {
+    margin: 0 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .global-header .auth-options button:hover {
+    background-color: #0056b3;
+  }
+  
+  .app-content {
+    margin-top: 60px; /* Give space for the fixed header */
+  }
+  

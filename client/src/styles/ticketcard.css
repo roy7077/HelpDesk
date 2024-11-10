@@ -1,0 +1,86 @@
+/* Ticket Card Container */
+.ticket-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    width: 100%; /* Ensures the card takes full available width */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.ticket-id,
+.ticket-title,
+.ticket-customer,
+.ticket-date {
+    font-size: 14px;
+    color: #333;
+}
+
+.ticket-title {
+    font-weight: bold;
+}
+
+.ticket-customer {
+    color: #777;
+}
+
+.ticket-date {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Status Section */
+.ticket-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-info {
+    font-size: 14px;
+    color: #555;
+}
+
+.status-dropdown-container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.status-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+}
+
+.status-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.status-dropdown option {
+    padding: 10px;
+}
+
+/* Hover and focus states for dropdown */
+.status-dropdown:hover,
+.status-dropdown:focus {
+    background-color: #f0f0f0;
+}
