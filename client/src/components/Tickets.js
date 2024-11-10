@@ -31,12 +31,12 @@ const Tickets = () => {
 
         let response;
         if (user.accountType === 'Admin' || user.accountType === 'Service Agent') {
-          response = await fetch('http://localhost:8080/api/v1/ticket/viewalltickets', {
+          response = await fetch('https://helpdesk-yyx0.onrender.com/api/v1/ticket/viewalltickets', {
             method: 'POST',
             headers: config.headers,
           });
         } else {
-            response = await fetch('http://localhost:8080/api/v1/ticket/showtickets', {
+            response = await fetch('https://helpdesk-yyx0.onrender.com/api/v1/ticket/showtickets', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json', // Ensure this is set correctly
