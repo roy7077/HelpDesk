@@ -39,7 +39,7 @@ const TicketCard = ({ ticket, onStatusChange, onOpenTicketThread }) => {
         // Make an API call to update the status if the user is authorized
         if (isAuthorized) {
             try {
-                const response = await fetch('http://localhost:8080/api/v1/ticket/updateticketstatus', {
+                const response = await fetch('https://helpdesk-yyx0.onrender.com/api/v1/ticket/updateticketstatus', {
                     method: 'PATCH',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
