@@ -13,7 +13,7 @@ const Customers = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/v1/user/customers');
+        const response = await fetch('https://helpdesk-yyx0.onrender.com/api/v1/user/customers');
         const data = await response.json();
         
         if (response.ok && data.customers) {
@@ -55,7 +55,7 @@ const Customers = () => {
     updatedCustomer.token=token;
     //console.log(updatedCustomer)
     try {
-      const response = await fetch(`http://localhost:8080/api/v1/user/updateprofile/${updatedCustomer._id}`, {
+      const response = await fetch(`https://helpdesk-yyx0.onrender.com/api/v1/user/updateprofile/${updatedCustomer._id}`, {
         method: 'PUT', 
         headers: {
           'Content-Type': 'application/json',
