@@ -11,7 +11,7 @@ const TicketThread = ({ ticketID, token, onClose }) => {
     const fetchThreadEntries = async () => {
       try {
         const token = localStorage.getItem('authToken');
-        const response = await fetch(`http://localhost:8080/api/v1/note/getthread/${ticketID}`, {
+        const response = await fetch(`https://helpdesk-yyx0.onrender.com/api/v1/note/getthread/${ticketID}`, {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -41,7 +41,7 @@ const TicketThread = ({ ticketID, token, onClose }) => {
     if (!newEntry) return;
 
     try {
-      const response = await fetch(`http://localhost:8080/api/v1/note/addnewnote`, {
+      const response = await fetch(`https://helpdesk-yyx0.onrender.com/api/v1/note/addnewnote`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
