@@ -46,7 +46,7 @@ const CreateTicket = () => {
 
       // Make the POST request using fetch
       const token=localStorage.getItem('authToken');
-      const response = await fetch('http://localhost:8080/api/v1/ticket/createnewticket', {
+      const response = await fetch('https://helpdesk-yyx0.onrender.com/api/v1/ticket/createnewticket', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
